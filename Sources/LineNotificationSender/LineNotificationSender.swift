@@ -10,7 +10,7 @@ public struct LineNotificationSender {
     }
     
     // It encodes passed string.
-    func notify(message: String) {
+    public func notify(message: String) {
         let url = URL(string: "https://notify-api.line.me/api/notify")!
         
         let charset = CharacterSet.alphanumerics.union(.init(charactersIn: "/?-._~"))
